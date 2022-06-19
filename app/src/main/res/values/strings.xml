@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="Favourite_Articles">My Favourites</string>
+    <string name="News_Feed">News Feed</string>
+    <string name="save_as_faourite">save as favourite</string>
+    <string name="no_internet_connection">No Internet \n please check your connection \n or you can check your saved list without internet</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="aritcle_item_padding">16dp</dimen>
+    <dimen name="cardview_corner">20dp</dimen>
+    <dimen name="article_card_view_margin">10dp</dimen>
+</resources>

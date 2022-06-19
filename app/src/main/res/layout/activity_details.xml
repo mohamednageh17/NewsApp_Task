@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.DetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="50dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bookMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:padding="0dp"
+                android:src="@drawable/bookmark_icon_white" />
+
+            <TextView
+                android:id="@+id/article_section_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/bookMark"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:text="section"
+                android:textAppearance="?attr/textAppearanceSubtitle2"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/article_web_title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookMark"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:text="here is a title of the article"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+            <TextView
+                android:id="@+id/article_url_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/article_web_title_text_view"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/share"
+                android:padding="10dp"
+                android:text="https://www.facebook.com"
+                android:textColor="#223ED8"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/article_web_title_text_view"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:padding="0dp"
+                android:src="@drawable/share_icon" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
